@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/public/css/index.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="icon" href="/public/images/favicon.png" type="image/x-icon">
-  <title>fikrifyanto</title>
+  <title>Projects</title>
 </head>
 <body class="pb-40 bg-gray-100">
     
@@ -15,7 +15,7 @@
     <div class="fixed shadow-sm top-0 mt-3 w-full text-gray-700 bg-white dark-mode:text-gray-200 bg-opacity-90 dark-mode:bg-gray-800" style="z-index: 2000;" style="backdrop-filter: saturate(180%) blur(200px) !important;">
       <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-11">
         <div class="p-4 flex flex-row items-center justify-between">
-          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">FikriFYanto</a>
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Projects</a>
           <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
               <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -24,7 +24,7 @@
           </button>
         </div>
         <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-          <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./project.html">Projects</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./index.html">Projects</a>
           <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./skill.html">Skills</a>
           <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./draw.html">Draws</a>
           <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./contact.html">Contact</a>
@@ -34,6 +34,93 @@
     </div>
   
     <div class="mx-auto lg:px-36">
+      <!-- Project One -->
+      <section class="relative pt-12 bg-blueGray-50 mt-10 divide-y divide-yellow-500">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
+            <img alt="..." class="max-w-full rounded-lg shadow-lg" src="./public/images/project1.png">
+          </div>
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12">
+              <div class="text-yellow-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-200 mt-8">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-3xl font-semibold">Kassa.id</h3>
+              <br>
+              <p class="text-lg max-w-prose">
+                Website penyedia layanan Point Of Sale, micro management dan analisis bisnis.
+                <br><br><a href="http://kassa.id" class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-medium hover:text-white py-2 px-7 border border-yellow-500 hover:border-transparent rounded">Kunjungi</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Project 3 -->
+      <section class="relative pt-12 bg-blueGray-50 mt-10 z-0">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
+            <img alt="..." class="max-w-full rounded-lg shadow-lg" src="./public/images/project4.png">
+          </div>
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12">
+              <div class="text-yellow-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-200 mt-8">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-3xl font-semibold">Dinas Pertanian Dan Ketahanan Pangan</h3>
+              <br>
+              <p class="text-lg max-w-prose">
+                Website DIPERTA berisi informasi About Me pertanian dan pangan yang ada di daerah Kabupaten Sumedang.
+                <br><br><a href="https://diperta.sumedangkab.go.id" class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-medium hover:text-white py-2 px-7 border border-yellow-500 hover:border-transparent rounded">Kunjungi</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Project 4 -->
+      <section class="relative pt-12 bg-blueGray-50 mt-10 z-0">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
+            <img alt="..." class="max-w-full rounded-lg shadow-lg" src="./public/images/project3.png">
+          </div>
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12">
+              <div class="text-yellow-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-200 mt-8">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-3xl font-semibold">Sistem Infromasi Layanan Persandian dan Keamanan Informasi</h3>
+              <br>
+              <p class="text-lg max-w-prose">
+                SILPAKAMI merupakan suatu aplikasi layanan persandian dan keamanan informasi dalam penerapan sertifikat elektronik yang meliputi; pendaftaran sertifikat elektronik, perubahan data sertifikat elektronik, pencabutan sertifikat elektronik, layanan jamming layanan Jamming rapat dinas pimpinan dan rapat dinas perangkat daerah, layanan insiden handling keamanan informasi dalam mendukung efektivitas pelayanan publik.
+                <br><br><a href="https://silpakami.sumedangkab.go.id" class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-medium hover:text-white py-2 px-7 border border-yellow-500 hover:border-transparent rounded">Kunjungi</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 2 -->
+      <section class="relative pt-12 bg-blueGray-50 mt-10 z-0">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
+            <img alt="..." class="max-w-full rounded-lg shadow-lg" src="./public/images/project2.png">
+          </div>
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12">
+              <div class="text-yellow-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-200 mt-8">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-3xl font-semibold">SIM RSU Kharisma Subang</h3>
+              <br>
+              <p class="text-lg max-w-prose">
+                Sistem Informasi Manajemen untuk RSU Kharisma Pamanukan Subang berbasis web.
+                <br><br><button class="bg-transparent text-gray-700 font-medium py-2 px-7 border border-gray-500 rounded">Private</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
 </body>
