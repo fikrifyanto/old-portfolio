@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="icon" href="/public/images/favicon.png" type="image/x-icon">
+  <title>Skills</title>
+</head>
+<body class="pb-40 bg-gray-100">
+    
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="fixed shadow-sm top-0 mt-3 w-full text-gray-700 bg-white dark-mode:text-gray-200 bg-opacity-90 dark-mode:bg-gray-800" style="z-index: 2000;" style="backdrop-filter: saturate(180%) blur(200px) !important;">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-11">
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Skills</a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./project.html">Projects</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./skill.html">Skills</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./draw.html">Draws</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./contact.html">Contact</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./about.html">About Me</a>
+        </nav>
+      </div>
+    </div>
+  
+    <div class="mt-24 px-5 md:px-16 lg:px-52 mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36 w-36" src="https://laravel.com/img/logomark.min.svg" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Laravel</p>
+            <p class="text-base text-gray-400 font-normal">Framework</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Bootstrap</p>
+            <p class="text-base text-gray-400 font-normal">Framework</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://cdn.freebiesupply.com/logos/large/2x/codeigniter-logo-png-transparent.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Codeigniter</p>
+            <p class="text-base text-gray-400 font-normal">Framework</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">MySQL</p>
+            <p class="text-base text-gray-400 font-normal">DBMS</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Javascript</p>
+            <p class="text-base text-gray-400 font-normal">Programming Language</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://www.php.net/images/logos/new-php-logo.svg" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">PHP</p>
+            <p class="text-base text-gray-400 font-normal">Programming Language</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/jquery_plain_wordmark_logo_icon_146445.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">JQuery</p>
+            <p class="text-base text-gray-400 font-normal">Library</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">HTML</p>
+            <p class="text-base text-gray-400 font-normal">Markup Language</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">CSS</p>
+            <p class="text-base text-gray-400 font-normal">Markup Language</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Git / Github</p>
+            <p class="text-base text-gray-400 font-normal">Dev Tools</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://www.adobe.com/content/dam/cc/icons/premiere.svg" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Adobe Premiere Pro</p>
+            <p class="text-base text-gray-400 font-normal">Software</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://www.adobe.com/content/dam/cc/icons/illustrator.svg" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Adobe Illustrator</p>
+            <p class="text-base text-gray-400 font-normal">Software</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+          <div class="mb-8">
+            <img class="h-36" src="https://cdn.freelogovectors.net/wp-content/uploads/2021/01/coreldraw-logo-freelogovectors.net_.png" alt="photo">
+          </div>
+          <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">CorelDRAW</p>
+            <p class="text-base text-gray-400 font-normal">Software</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
