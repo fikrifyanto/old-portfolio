@@ -1,10 +1,8 @@
 {
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^3.0.18"
   },
   "scripts": {
-    "dev" : "tailwindcss build ./src/css/index.css -o ./public/css/index.css"
+    "tailwind": "npx tailwindcss -i ./src/app.css -o ./app.css --watch"
   }
 }
