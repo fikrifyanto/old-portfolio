@@ -1,8 +1,10 @@
 module.exports = {
-  content: ["./src/*.html"],
+  darkMode: "class",
+  important: true,
+  content: ["*.html"],
   theme: {
     fontFamily: {
-      'inter': [ 'Inter', 'sans-serif']
+      inter: ["Inter", "sans-serif"],
     },
     extend: {
       animation: {
@@ -26,17 +28,17 @@ module.exports = {
         },
         color: {
           "0%": {
-            backgroundColor: '#FFFFFF',
+            backgroundColor: "#FFFFFF",
           },
           "50%": {
-            backgroundColor: '#f0f9ff',
+            backgroundColor: "#f0f9ff",
           },
           "100%": {
-            backgroundColor: '#FFFFFF',
+            backgroundColor: "#FFFFFF",
           },
         },
       },
     },
   },
   plugins: [],
-}
+};
